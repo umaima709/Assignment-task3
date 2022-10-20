@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation task 3</title>
+  <style>
+    #link{
+  font-size:1em;
+  margin:10px 0;
+}
+
+
+.target{
+  animation: flowing 4s linear infinite;
+  animation-iteration-count: 3;
+  transform: translateX(100%);
+}
+
+@keyframes flowing {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+  </style>
+</head>
+<body>
+
+<H1 class="target"> Watch me move</h1>
+  <p>This animation shows how to use CSS animation to make H1 element move across the page.</p>
+  <p> In addition,we output some text each time an animation event fire, so you can see tham in action.</p>
+  <ul>
+    <li> started: elapse time is 0</li>
+        <LI>New loop started at time 3</LI>
+        <LI>New loop started at time 6</LI>
+        <li>ended: elapse time is 9</li>
+  </ul>
+</body>
+</html>
